@@ -11,17 +11,18 @@ const Header = () => {
       <div id="logo" className="logo">
         <Link to="/">
           <NetflixLogo/>
+          {/* <img src='src/components/icons/svgs/leis-ux_adobe_express.svg'></img> */}
         </Link>
       </div>
       <Nav/>
-      <div className="user-profile" >
+      {/* <div className="user-profile" >
         <div className="user">
           <div className="name">Imran Sayed</div>
           <div className="image">
             <img src="/images/netflix-logo.png" alt="netflix"/>
           </div>
         </div>
-      </div>
+      </div> */}
     </header>
   )
 }

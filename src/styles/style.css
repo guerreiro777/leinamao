@@ -10,7 +10,8 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
-h2, .TitleList .Title {
+h2,
+.TitleList .Title {
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.4;
@@ -60,7 +61,7 @@ p {
 }
 
 .logo svg path {
-	fill: #e50914;
+	fill: #eee;
 	transition: fill 0.125s ease;
 }
 
@@ -73,7 +74,7 @@ p {
 	fill: #ffffff !important;
 }
 
-.navigation ul {
+/* .navigation ul {
 	display: flex;
 	height: 37px;
 	align-items: center;
@@ -92,7 +93,7 @@ p {
 .navigation ul li:hover {
 	background: #e50914;
 	cursor: pointer;
-}
+} */
 
 .user-profile {
 	margin-left: auto;
@@ -219,4 +220,93 @@ p {
 
 .button-el[data-primary=true]:hover {
 	background: #e50914;
+}
+
+
+.navigation {
+	display: flex;
+	width: 100%;
+}
+
+.brand-name {
+	text-decoration: none;
+	color: black;
+	font-size: 1.3rem;
+	margin-left: 1rem;
+}
+
+.navigation-menu {
+	margin-left: auto;
+}
+
+.navigation-menu ul {
+	display: flex;
+	padding: 0;
+}
+
+.navigation-menu li {
+	list-style-type: none;
+	margin: 0 1rem;
+}
+
+.navigation-menu li a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+
+.hamburger {
+	border: 0;
+	height: 40px;
+	width: 40px;
+	padding: 0.5rem;
+	border-radius: 50%;
+	background-color: #283b8b;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+	position: absolute;
+	right: 35px;
+	transform: translateY(-50%);
+	display: none;
+}
+
+.hamburger:hover {
+	background-color: #2642af;
+}
+
+@media screen and (max-width: 550px) {
+	.hamburger {
+		display: block;
+	}
+
+	.navigation-menu ul {
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 60px);
+		background-color: white;
+		border-top: 1px solid black;
+		display: none;
+	}
+
+	.navigation-menu li {
+		text-align: center;
+		margin: 0;
+	}
+
+	.navigation-menu li a {
+		color: black;
+		width: 100%;
+		padding: 1.5rem 0;
+	}
+
+	.navigation-menu li:hover {
+		background-color: #eee;
+	}
+
+	.navigation-menu.expanded ul {
+		display: block;
+	}
 }
