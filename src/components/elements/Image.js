@@ -67,7 +67,7 @@ const Image = ({
       {...props}
       ref={image}
       className={className}
-      src={'http://localhost:3000/' + src}
+      src={src}
       width={width}
       height={height}
       alt={alt}
