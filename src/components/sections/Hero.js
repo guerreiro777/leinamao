@@ -35,7 +35,7 @@ const Hero = ({
   const closeModal = (e) => {
     e.preventDefault();
     setVideomodalactive(false);
-  }   
+  }
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -61,21 +61,79 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
+              As <span className="text-color-primary">Leis</span> em um só lugar
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-                </p>
+                Ache aqui os projetos que poderão ser lei e os que já são lei.
+              </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
+
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <div>
+                    <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
+                      <div className="tiles-item-inner">
+                        {/* <div className="testimonial-item-content"> */}
+                          <p className="text-sm mb-0">
+                            Câmara Legislativa
+                          </p>
+                        {/* </div> */}
+                        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                          <span className="testimonial-item-name text-color-high">Clique </span>
+                          <span className="testimonial-item-link">
+                            <a href="#0"> aqui</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  &nbsp;
+                  <div >
+                    <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
+                      <div className="tiles-item-inner">
+                        {/* <div className="testimonial-item-content"> */}
+                          <p className="text-sm mb-0">
+                            Senado Federal
+                          </p>
+                        {/* </div> */}
+                        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                          <span className="testimonial-item-name text-color-high">Clique</span>
+                          <span className="testimonial-item-link">
+                            <a href="#0"> aqui</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    &nbsp;
+                  <div>
+                    <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
+                      <div className="tiles-item-inner">
+                        {/* <div className="testimonial-item-content"> */}
+                          <p className="text-sm mb-0">
+                            Presidência
+                          </p>
+                        {/* </div> */}
+                        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                          <span className="testimonial-item-name text-color-high">Clique</span>
+                          <span className="testimonial-item-link">
+                            <a href="#0"> aqui</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
                     Get started
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                  <Button tag="aLegislativa" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
                     View on Github
-                    </Button>
+                    </Button> */}
                 </ButtonGroup>
+                {/* 
+                
+                */}
+
               </div>
             </div>
           </div>
@@ -86,12 +144,12 @@ const Hero = ({
               aria-controls="video-modal"
               onClick={openModal}
             >
-              <Image
+              {/* <Image
                 className="has-shadow"
                 src='images/video-placeholder.jpg'
                 alt="Hero"
                 width={896}
-                height={504} />
+                height={504} /> */}
             </a>
           </div>
           <Modal

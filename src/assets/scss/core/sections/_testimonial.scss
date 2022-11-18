@@ -51,6 +51,8 @@
 		padding-left: $testimonial-item--inner-padding-h;
 		padding-right: $testimonial-item--inner-padding-h;
 	}
+
+	
 }
 
 .testimonial-item-content {
@@ -104,5 +106,11 @@
 				padding: $testimonial-items--padding__desktop * 0.5;
 			}
 		}
+	}
+	.colorHero{
+		background-color: #34343c;
+		width: 180px;
+		height: 200px;
+		// border: 1px solid red;
 	}
 }
