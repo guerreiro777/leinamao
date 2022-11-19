@@ -28,8 +28,33 @@ $palette: (
 		error: #FF6171,
 		warning: #FFA173,
 		success: #24E5AF
+	),
+	teste: (
+		1: #16B83E,
+		2: #FFE11F,
+		3: #1651B8,
+		4: #FFFFFF
 	)
 );
+
+/* Color Theme Swatches in Hex */
+$Bandeira-Brasil-1-hex: #16B83E;
+$Bandeira-Brasil-2-hex: #FFE11F;
+$Bandeira-Brasil-3-hex: #1651B8;
+$Bandeira-Brasil-4-hex: #FFFFFF;
+
+/* Color Theme Swatches in RGBA */
+$Bandeira-Brasil-1-rgba: rgba(22,184,61, 1);
+$Bandeira-Brasil-2-rgba: rgba(255,225,31, 1);
+$Bandeira-Brasil-3-rgba: rgba(22,80,184, 1);
+$Bandeira-Brasil-4-rgba: rgba(255,255,255, 1);
+
+/* Color Theme Swatches in HSLA */
+$Bandeira-Brasil-1-hsla: hsla(134, 78, 40, 1);
+$Bandeira-Brasil-2-hsla: hsla(51, 100, 56, 1);
+$Bandeira-Brasil-3-hsla: hsla(218, 78, 40, 1);
+$Bandeira-Brasil-4-hsla: hsla(0, 0, 100, 1);
+
 
 // Base typography: color
 $color: (
@@ -75,7 +100,7 @@ $icon--color: (
 
 // Misc elements: background color
 $bg--color: (
-	body: 			get-color(dark, 1),
+	body: 			get-color(teste, 1),
 	body-shadow:	0 20px 48px rgba(get-color(dark, 1), .8),	// body shadow when a boxed layout is used (set to null if don't want a shadow)
 	body-outer:		lighten(get-color(dark, 1), 2%),			// outer bg color when a boxed layout is used
 	bg-color: 		lighten(get-color(light, 1), 9%),			// .has-bg-color helper class
