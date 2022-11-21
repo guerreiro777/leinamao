@@ -1,8 +1,27 @@
 import React from 'react';
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../utils/SectionProps';
+import { SectionSplitProps, } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import ReactWordcloud from 'react-wordcloud';
+import Input from '../elements/Input';
+
+const callbacks = {
+  getWordColor: word => word.value > 50 ? "green" : "blue",
+  onWordClick: console.log,
+  onWordMouseOver: console.log,
+  getWordTooltip: word => `${word.text} (${word.value}) [${word.value > 50 ? "good" : "bad"}]`,
+}
+const options = {
+  rotations: 2,
+  rotationAngles: [-90, 0],
+};
+const size = [6, 8];
+const words = [{ text: 'homicídio', value: 34, }, { text: '2021', value: 81, }, { text: '2022', value: 46, },
+{ text: 'orçamento secreto', value: 34, }, { text: 'educação', value: 74, }, { text: 'saúde', value: 64, },
+{ text: 'homicídio', value: 64, }, { text: 'Aposentadoria', value: 33, }, { text: 'Câmara Legislativa', value: 29, },
+{ text: 'Senado Federal', value: 1, }, { text: 'Presidência', value: 7, }, { text: 'Presidente', value: 99, },
+{ text: 'STF', value: 50, }, { text: 'Ministro', value: 50, }, { text: 'TSE', value: 50, }, { text: 'Eleições', value: 50, }];
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -65,32 +84,32 @@ const FeaturesSplit = ({
           <div className={splitClasses}>
 
             <div className="split-item ">
-                <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
-                  <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                    Principais pesquisas por tema
-                  </div>
-                  <h5 className="mt-0 mb-12">
-                    Econtre leis por temas relacionados
-                  </h5>
-                  <a href=''>Ficha limpa </a>
-                  <span className="text-color-low"> / </span>
-                  <a href=''>Corrupção </a>
-                  <span className="text-color-low"> / </span>
-                  <a href=''>Maioridade Penal </a>
-                  <span className="text-color-low"> / </span>
-                  <a href=''>Homicídio</a>
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
+                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                  Principais pesquisas
+                </p>
+                <div style={{ backgroundImage: "url(images/features-split-image-01.png)", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", }}>
+                  <ReactWordcloud
+                    callbacks={callbacks}
+                    options={options}
+                    size={size}
+                    words={words}
+                  />
+                </div>
               </div>
               <div className={
                 classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
+                  'cta-action split-item-image center-content-mobile reveal-from-bottom',
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src='images/features-split-image-01.png'
-                  alt="Features split 01"
-                  width={528}
-                  height={396} />
+                <form >
+                  <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Your best email">
+                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
+                    </svg>
+                  </Input>
+                </form>
               </div>
             </div>
 
@@ -145,7 +164,6 @@ const FeaturesSplit = ({
                   height={396} />
               </div>
             </div> */}
-
           </div>
         </div>
       </div>
