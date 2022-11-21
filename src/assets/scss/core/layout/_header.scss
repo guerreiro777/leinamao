@@ -3,7 +3,9 @@
 	top: 0;
 	width: 100%;
 	z-index: 10 !important;
-	background: color-bg(header);
+	// background: color-bg(header);
+	background: linear-gradient(#16B83E, #16B83E);
+	color: #1651B8;
 
 	+ .site-content {
 

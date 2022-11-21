@@ -61,7 +61,7 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              As <span className="text-color-primary">Leis</span> em um só lugar
+              As <span style={{ color: "#16B83E" }}>Leis</span> em um só lugar
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
@@ -72,54 +72,72 @@ const Hero = ({
                 <ButtonGroup>
                   <div>
                     <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
-                      <div className="tiles-item-inner">
-                        <div className="">
-                          <p className="text-sm mb-0">
-                            Câmara Legislativa
-                          </p>
-                        </div>
-                        <div className="testimonial-item-footer text-xs mt-30 mb-0 has-top-divider">
-                          <span className="testimonial-item-name text-color-high">Clique </span>
-                          <span className="testimonial-item-link">
-                            <a href="#0"> aqui</a>
-                          </span>
-                        </div>
+                      <div className="tiles-item-inner" style={{ fontWeight: "bold", width: "100%", color: "white", backgroundColor: "#FFE11F", height: "80%" }}>
+                        <p className="text-sm mb-0">
+                          Câmara Legislativa
+                        </p>
+                      </div>
+                      <div>
+                        <span className="testimonial-item-name text-color-high"></span>
+                        <span className="testimonial-item-link ">
+                          <a href="#0"
+                            style={{
+                              position: "relative",
+                              top: "25px",
+                              transition: ".3s ease",
+                            }}
+                            className='has-icon'> <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                            </svg></a>
+                        </span>
                       </div>
                     </div>
                   </div>
                   &nbsp;
-                  <div >
+                  <div>
                     <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
-                      <div className="tiles-item-inner">
-                        <div className="">
-                          <p className="text-sm mb-0">
-                            Senado Federal
-                          </p>
-                        </div>
-                        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                          <span className="testimonial-item-name text-color-high">Clique</span>
-                          <span className="testimonial-item-link">
-                            <a href="#0"> aqui</a>
-                          </span>
-                        </div>
+                      <div className="tiles-item-inner" style={{ fontWeight: "bold", width: "100%", color: "white", backgroundColor: "#1651B8", height: "80%" }}>
+                        <p className="text-sm mb-0">
+                          Senado Federal
+                        </p>
+                      </div>
+                      <div>
+                        <span className="testimonial-item-name text-color-high"></span>
+                        <span className="testimonial-item-link ">
+                          <a href="#0"
+                            style={{
+                              position: "relative",
+                              top: "25px",
+                              transition: ".3s ease",
+                            }}
+                            className='has-icon'> <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                            </svg></a>
+                        </span>
                       </div>
                     </div>
                   </div>
-                    &nbsp;
+                  &nbsp;
                   <div>
                     <div className="tiles-item reveal-from-right colorHero" data-reveal-delay="200">
-                      <div className="tiles-item-inner">
-                        {/* <div className="testimonial-item-content"> */}
-                          <p className="text-sm mb-0">
-                            Presidência
-                          </p>
-                        {/* </div> */}
-                        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                          <span className="testimonial-item-name text-color-high">Clique</span>
-                          <span className="testimonial-item-link">
-                            <a href="#0"> aqui</a>
-                          </span>
-                        </div>
+                      <div className="tiles-item-inner" style={{ fontWeight: "bold", width: "100%", color: "white", backgroundColor: "#16B83E", height: "80%" }}>
+                        <p className="text-sm mb-0">
+                          Presidência
+                        </p>
+                      </div>
+                      <div>
+                        <span className="testimonial-item-name text-color-high"></span>
+                        <span className="testimonial-item-link ">
+                          <a href="#0"
+                            style={{
+                              position: "relative",
+                              top: "25px",
+                              transition: ".3s ease",
+                            }}
+                            className='has-icon'> <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                            </svg></a>
+                        </span>
                       </div>
                     </div>
                   </div>
