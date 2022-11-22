@@ -11,7 +11,7 @@ const propTypes = {
   type: PropTypes.oneOf(['textarea', 'text', 'email', 'tel', 'password', 'number', 'search', 'color', 'date', 'time', 'datetime-local']),
   name: PropTypes.string,
   status: PropTypes.string,
-  disabled: PropTypes.bool,
+  //disabled: PropTypes.bool,
   value: PropTypes.string,
   formGroup: PropTypes.string,
   hasIcon: PropTypes.string,
@@ -28,7 +28,7 @@ const defaultProps = {
   type: 'text',
   name: undefined,
   status: '',
-  disabled: false,
+  //disabled: false,
   value: undefined,
   formGroup: null,
   hasIcon: null,
@@ -46,7 +46,7 @@ const Input = ({
   type,
   name,
   status,
-  disabled,
+  //disabled,
   value,
   formGroup,
   hasIcon,
@@ -81,7 +81,7 @@ const Input = ({
           type={type !== 'textarea' ? type : null}
           className={classes}
           name={name}
-          disabled={disabled}
+          //disabled={disabled}
           value={value}
           placeholder={placeholder}
           rows={type === 'textarea' ? rows : null}

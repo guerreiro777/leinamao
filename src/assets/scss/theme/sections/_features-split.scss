@@ -1,0 +1,17 @@
+.fundo::before {
+    content: "";
+    background: url(../../../images/features-split-image-01.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    // z-index: 9999;
+}
+
+.form-input {
+    border-color: transparent;
+    border-radius: 2px;
+}

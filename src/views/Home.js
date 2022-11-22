@@ -10,11 +10,11 @@ const Home = () => {
 
   return (
     <>
-      <Hero className="illustration-section-01" style={{backgroundColor: "#fff"}}/>
+      <Hero className="illustration-section-01" />
       <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider style={{backgroundColor: "#fff"}}/>
-      <Cta split />
+      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" style={{backgroundColor: "#fff"}}/>
+      <Testimonial topDivider/>
+      <Cta split style={{backgroundColor: "#fff"}}/>
     </>
   );
 }
