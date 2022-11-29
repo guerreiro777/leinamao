@@ -11,11 +11,13 @@ const Banner = ({
       {bannerOpen && (
         <div {...props} className="banner">
           <div className="banner-inner text-xxs">
-            <div className='banner-container'><a className="banner-link banner-link-white" href="https://github.com/cruip/open-react-template" target="_blank" rel="noopener noreferrer">Download<span className="banner-hide-on-sm"> on GitHub</span></a> <span className="banner-separator">or</span> <a className="banner-link banner-link-green" href="https://cruip.com/open-pro/" target="_blank" rel="noopener noreferrer">Check Premium Version</a></div>
+            <div className='banner-container'>
+              <a className="banner-link banner-link-green"
+                href="https://cruip.com/open-pro/" target="_blank" rel="noopener noreferrer">Ative o sinho</a></div>
             <button className="banner-close" onClick={() => setBannerOpen(false)}>
-              <span className="screen-reader">Close</span>
-              <svg viewBox="0 0 16 16">
-                <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
+              <span className="screen-reader">Alert</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
               </svg>
             </button>
           </div>

@@ -100,7 +100,7 @@ const FeaturesSplit = ({
               </div>
               <div className='split-item-image' data-reveal-container=".split-item">
                 <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                  Cadetre-se e receba as nossas notícias
+                  Cadetre-se e receba as notícias
                 </p>
                 <div style={{ backgroundColor: "#fff", height: "300px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", padding: "10px" }}>
                   <div>

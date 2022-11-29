@@ -110,7 +110,7 @@ const Testimonial = ({
         />] */}
 
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-right shadow" data-reveal-delay="200">
               <div className="tiles-item-inner">
@@ -131,7 +131,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Principais notícias</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Deputados</a>
+                    <a href="#0">Câmara dos Dep</a>
                   </span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Principais notícias</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Senadores</a>
+                    <a href="#0">Senado</a>
                   </span>
                 </div>
               </div>

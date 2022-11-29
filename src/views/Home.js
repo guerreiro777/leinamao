@@ -14,7 +14,7 @@ const Home = () => {
       <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" style={{backgroundColor: "#fff"}}/>
       <Testimonial topDivider/>
-      <Cta split style={{backgroundColor: "#fff"}}/>
+      {/* <Cta split style={{backgroundColor: "#fff"}}/> */}
     </>
   );
 }
