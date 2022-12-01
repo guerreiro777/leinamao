@@ -27,7 +27,7 @@ const words = [{ text: 'homicídio', value: 34, }, { text: '2021', value: 81, },
 const propTypes = {
   ...SectionSplitProps.types
 }
-
+  
 const defaultProps = {
   ...SectionSplitProps.defaults
 }

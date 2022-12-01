@@ -16,6 +16,11 @@
     background-position: right bottom;    
 }
 
+.cta-width {
+    width: 200px;
+    
+}
+
 @include media( '>medium' ) {
 
 .cta {
