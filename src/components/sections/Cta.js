@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
-import Button from '../elements/Button';
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+
 
 const propTypes = {
   ...SectionProps.types,
@@ -51,6 +57,13 @@ const Cta = ({
     pushLeft && 'push-left'
   );
 
+  const splitClasses = classNames(
+    'split-wrap ',
+    invertMobile && 'invert-mobile',
+    invertDesktop && 'invert-desktop',
+    alignTop && 'align-top'
+  );
+
   return (
     <section
       {...props}
@@ -61,47 +74,90 @@ const Cta = ({
         <div
           className={innerClasses}
         >
-          <div className={tilesClasses}>
+          <div className={splitClasses}>
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
+                <Form>
+                  <Row className="mb-3">
+                    <Form.Group as={Col} controlId="formGridEmail">
+                      <FloatingLabel
+                        controlId="floatingTextarea"
+                        label="Comments"
+                        className="mb-3"
+                      >
+                        <Form.Control type="email" placeholder="Enter email" />
+                      </FloatingLabel>
+                    </Form.Group>
 
-            <div>
-              <div>
-                <Button id="ano" label="Ano" labelHidden={true} size="sm" className='cta-width'>Ano</Button>
+                    <Form.Group as={Col} controlId="formGridPassword">
+                      <FloatingLabel
+                        controlId="floatingTextarea"
+                        label="Comments"
+                        className="mb-3"
+                      >
+                        <Form.Control type="password" placeholder="Password" />
+                      </FloatingLabel>
+                    </Form.Group>
+                  </Row>
+
+                  <Form.Group className="mb-3" controlId="formGridAddress1">
+                    <FloatingLabel
+                      controlId="floatingTextarea"
+                      label="Comments"
+                      className="mb-3"
+                    >
+                      <Form.Control placeholder="1234 Main St" />
+                    </FloatingLabel>
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="formGridAddress2">
+                    <FloatingLabel
+                      controlId="floatingTextarea"
+                      label="Comments"
+                      className="mb-3"
+                    >
+                      <Form.Control placeholder="Apartment, studio, or floor" />
+                    </FloatingLabel>
+                  </Form.Group>
+
+                  <Row className="mb-3">
+                    <Form.Group as={Col} controlId="formGridCity">
+                      <FloatingLabel
+                        controlId="floatingTextarea"
+                        label="Comments"
+                        className="mb-3"
+                      >
+                        <Form.Control />
+                      </FloatingLabel>
+                    </Form.Group>
+
+                    <Form.Group as={Col} controlId="formGridState">
+                      <Form.Select defaultValue="Choose...">
+                        <option>Choose...</option>
+                        <option>...</option>
+                      </Form.Select>
+                    </Form.Group>
+
+                    <Form.Group as={Col} controlId="formGridZip">
+                      <Form.Control />
+                    </Form.Group>
+                  </Row>
+
+                  <Form.Group className="mb-3" id="formGridCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                  </Form.Group>
+
+                  <Button variant="primary" type="submit">
+                    Submit
+                  </Button>
+                </Form>
               </div>
-              &nbsp;
-              <div>
-                <Button id="key" label="Key" labelHidden={true} size="sm" className='cta-width'>Palavra-Chefe</Button>
-              </div>
-              &nbsp;
-              <div>
-                <Button id="deputados" label="Deputados" labelHidden={true} size="sm" className='cta-width'>Deputados</Button>
-              </div>
-              &nbsp;
-              <div>
-                <Button id="email" label="E-mail" labelHidden={true} size="sm" className='cta-width'>Status</Button>
-              </div>
-            </div>
-            <div>
               <div className='split-item-image' data-reveal-container=".split-item">
-                <h2>Heading</h2>
-                <p>
-                  
+                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                  Cadetre-se e receba as notícias
                 </p>
-
               </div>
             </div>
-
-            {/* <div className="cta-slogan">
-            <h3 className="m-0">
-              For previewing layouts and visual?
-              </h3>
-          </div>
-          <div className="cta-action">
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Your best email">
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
-              </svg>
-            </Input>
-          </div> */}
           </div>
         </div>
       </div>

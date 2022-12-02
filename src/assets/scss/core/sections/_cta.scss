@@ -10,7 +10,7 @@
 	margin-bottom: $cta-slogan--padding-v__mobile;
 }
 
-@include media( '>medium' ) {
+@include media('>medium') {
 
 	.cta {
 
@@ -34,4 +34,22 @@
 			margin-right: $cta-slogan--padding-h__desktop;
 		}
 	}
+}
+
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+	height: calc(2.5rem + 2px);
+	line-height: 1.25;
+}
+
+.form-control-sm {
+	min-height: calc(1.5em + 0.5rem + 2px);
+	/* padding: 0.25rem 0.5rem; Cancelled out by .form-floating */
+	font-size: .875rem;
+	border-radius: 0.2rem;
+}
+
+.form-floating>label {
+	font-size: small;
 }
