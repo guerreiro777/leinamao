@@ -264,9 +264,6 @@ const Sta = ({
                       <h5>Pesquisa Textual</h5>
                           <Form.Control type="text" placeholder="Digite o termo a ser pesquisado" />
                     </Row><br />
-
-
-
                     <Button variant="primary" type="submit">
                       Submit
                     </Button>
