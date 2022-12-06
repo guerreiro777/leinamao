@@ -37,6 +37,7 @@ const Cta = ({
   ...props
 }) => {
 
+
   const outerClasses = classNames(
     'features-split section',
     topOuterDivider && 'has-top-divider',
@@ -64,104 +65,121 @@ const Cta = ({
     alignTop && 'align-top'
   );
 
+
   return (
     <section
       {...props}
       className={outerClasses}
     >
       <div className="container">
+        <div className={tilesClasses}>
 
-        <div
-          className={innerClasses}
-        >
-          <div className={splitClasses}>
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
-                <Form>
-                  <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridEmail">
-                      <FloatingLabel
-                        controlId="floatingTextarea"
-                        label="Comments"
-                        className="mb-3"
-                      >
-                        <Form.Control type="email" placeholder="Enter email" />
-                      </FloatingLabel>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridPassword">
-                      <FloatingLabel
-                        controlId="floatingTextarea"
-                        label="Comments"
-                        className="mb-3"
-                      >
-                        <Form.Control type="password" placeholder="Password" />
-                      </FloatingLabel>
-                    </Form.Group>
-                  </Row>
-
-                  <Form.Group className="mb-3" controlId="formGridAddress1">
-                    <FloatingLabel
-                      controlId="floatingTextarea"
-                      label="Comments"
-                      className="mb-3"
-                    >
-                      <Form.Control placeholder="1234 Main St" />
-                    </FloatingLabel>
-                  </Form.Group>
-
-                  <Form.Group className="mb-3" controlId="formGridAddress2">
-                    <FloatingLabel
-                      controlId="floatingTextarea"
-                      label="Comments"
-                      className="mb-3"
-                    >
-                      <Form.Control placeholder="Apartment, studio, or floor" />
-                    </FloatingLabel>
-                  </Form.Group>
-
-                  <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridCity">
-                      <FloatingLabel
-                        controlId="floatingTextarea"
-                        label="Comments"
-                        className="mb-3"
-                      >
-                        <Form.Control />
-                      </FloatingLabel>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridState">
-                      <Form.Select defaultValue="Choose...">
-                        <option>Choose...</option>
-                        <option>...</option>
-                      </Form.Select>
-                    </Form.Group>
-
+          <div
+            className={innerClasses}
+          >
+            <div className={splitClasses}>
+              <div className="split-item">
+                <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
+                  <Form style={{paddingBottom:'850px'}}>
+                    <Row className="mb-3">
+                      <Form.Group as={Col} controlId="formGridEmail">
+                        <FloatingLabel
+                          controlId="floatingTextarea"
+                          label="Assunto"
+                          className="mb-3"
+                        >
+                          <Form.Control type="email" placeholder="Enter email" />
+                        </FloatingLabel>
+                      </Form.Group>
+                    </Row>
                     <Form.Group as={Col} controlId="formGridZip">
-                      <Form.Control />
+                      <Form.Check type="checkbox" label="PEC" />
                     </Form.Group>
-                  </Row>
+                    <Form.Group as={Col} controlId="formGridZip">
+                      <Form.Check type="checkbox" label="PL" />
+                    </Form.Group>
+                    <br />
+                    <Row className="mb-3">
+                      <Form.Group as={Col} controlId="formGridEmail">
+                        <FloatingLabel
+                          controlId="floatingTextarea"
+                          label="Número"
+                          className="mb-3"
+                        >
+                          <Form.Control type="email" placeholder="Enter email" />
+                        </FloatingLabel>
+                      </Form.Group>
 
-                  <Form.Group className="mb-3" id="formGridCheckbox">
+                      <Form.Group as={Col} controlId="formGridPassword">
+                        <FloatingLabel
+                          controlId="floatingTextarea"
+                          label="Ano"
+                          className="mb-3"
+                        >
+                          <Form.Control type="password" placeholder="Password" />
+                        </FloatingLabel>
+                      </Form.Group>
+                    </Row>
+
+                    <Form.Group className="mb-3" controlId="formGridAddress2">
+                      <FloatingLabel
+                        controlId="floatingTextarea"
+                        label="Autor"
+                        className="mb-3"
+                      >
+                        <Form.Control placeholder="Apartment, studio, or floor" />
+                      </FloatingLabel>
+                    </Form.Group>
+
+                    <Row className="mb-3"> &nbsp;&nbsp; Em tramitação
+                      <Form.Group as={Col} controlId="formGridCity">
+                        <Form.Check type="checkbox" label="Todas" />
+
+                      </Form.Group>
+
+                      <Form.Group as={Col} controlId="formGridState">
+                        <Form.Check type="checkbox" label="Sim" />
+
+                      </Form.Group>
+
+                      <Form.Group as={Col} controlId="formGridZip">
+                        <Form.Check type="checkbox" label="Não" />
+                      </Form.Group>
+                    </Row>
+
+                    {/* <Form.Group className="mb-3" id="formGridCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
-                  </Form.Group>
+                  </Form.Group> */}
 
-                  <Button variant="primary" type="submit">
-                    Submit
-                  </Button>
-                </Form>
-              </div>
-              <div className='split-item-image' data-reveal-container=".split-item">
+                    <Button variant="primary" type="submit">
+                      Submit
+                    </Button>
+                  </Form>
+                </div>
+                <div className='cta-position' data-reveal-container=".split-item"> 
+                  <h2>Heading</h2>
+                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
+                  </p>
+                  <h2>Heading</h2>
                 <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                  Cadetre-se e receba as notícias
+                  Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                 </p>
+                <h2>Heading</h2>
+                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                  Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
+                </p>
+                <h2>Heading</h2>
+                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                  Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
+                </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 
