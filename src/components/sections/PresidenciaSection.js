@@ -162,21 +162,29 @@ const PresidenciaSection = ({
                     <Button variant="primary" type="submit">
                       Submit
                     </Button>
+                    &nbsp;
+                    &nbsp;
+                    <Button >
+                      <a href='/' style={{ color: "#FFF" }}>Voltar</a>
+                    </Button>
                   </Form>
                 </div>
-                <div className='PRta-position' data-reveal-container=".split-item" style={{height:'90rem'}}>
+                <div className='PRta-position' data-reveal-container=".split-item" style={{ height: '90rem' }}>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                 </div>
               </div>
             </div>

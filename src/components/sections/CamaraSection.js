@@ -80,7 +80,7 @@ const CamaraSection = ({
             <div className={splitClasses}>
               <div className="split-item">
                 <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item ">
-                  <Form style={{paddingBottom:'580px'}}>
+                  <Form style={{ paddingBottom: '580px' }}>
                     <Row className="mb-3">
                       <Form.Group as={Col} controlId="formGridEmail">
                         <FloatingLabel
@@ -146,6 +146,7 @@ const CamaraSection = ({
                         <Form.Check type="checkbox" label="Não" />
                       </Form.Group>
                     </Row>
+                    <br />
 
                     {/* <Form.Group className="mb-3" id="formGridCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
@@ -154,21 +155,29 @@ const CamaraSection = ({
                     <Button variant="primary" type="submit">
                       Submit
                     </Button>
+                    &nbsp;
+                    &nbsp;
+                    <Button >
+                      <a href='/' style={{ color: "#FFF" }}>Voltar</a>
+                    </Button>
                   </Form>
                 </div>
-                <div className='cta-position' data-reveal-container=".split-item"> 
+                <div className='cta-position' data-reveal-container=".split-item">
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                   <h2>Heading</h2>
-                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                  Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
-                </p>
-                <h2>Heading</h2>
-                <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                  Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
-                </p>
+                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
+                  </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
+                  <h2>Heading</h2>
+                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
+                  </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@ const SenadoSection = ({
 
                     <Row className="mb-3">
                       <Form.Group as={Col} controlId="formGridEmail">
-                          <Form.Control type="email" placeholder="Assunto" />
+                        <Form.Control type="email" placeholder="Assunto" />
                       </Form.Group>
                     </Row>
                     <Form.Group as={Col} controlId="formGridZip">
@@ -230,7 +230,7 @@ const SenadoSection = ({
                       <h5>Norma Gerada</h5>
                       <Form.Group as={Col} className="mb-3" id="formGridCheckbox">
                         <Form.Select className="mb-3" id="formGridCheckbox">
-                          <Form.Control  type="text" className="mb-3" id="formGridCheckbox" />
+                          <Form.Control type="text" className="mb-3" id="formGridCheckbox" />
                           <option>Tipo</option>
                           <option value='1'>Decreto-Lei</option>
                           <option value='2'>Decreto Legislativo</option>
@@ -262,26 +262,35 @@ const SenadoSection = ({
 
                     <Row>
                       <h5>Pesquisa Textual</h5>
-                          <Form.Control type="text" placeholder="Digite o termo a ser pesquisado" />
-                    </Row><br />
+                      <Form.Control type="text" placeholder="Digite o termo a ser pesquisado" />
+                    </Row>
+                    <br />
                     <Button variant="primary" type="submit">
                       Submit
                     </Button>
+                    &nbsp;
+                    &nbsp;
+                    <Button >
+                      <a href='/' style={{ color: "#FFF" }}>Voltar</a>
+                    </Button>
                   </Form>
                 </div>
-                <div className='cta-position' data-reveal-container=".split-item" style={{height:'105rem'}}>
+                <div className='cta-position' data-reveal-container=".split-item" style={{ height: '105rem' }}>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                   <h2>Heading</h2>
                   <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
                     Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
                   </p>
+                  <a href='' style={{ color: "blue" }}>ver mais</a>
                 </div>
               </div>
             </div>
