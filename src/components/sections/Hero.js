@@ -6,6 +6,12 @@ import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
+import { useLocation, Switch } from 'react-router-dom';
+import AppRoute from '../../utils/AppRoute';
+import Cta from './Cta';
+import LayoutDefault from '../../layouts/LayoutDefault';
+
+
 const propTypes = {
   ...SectionProps.types
 }
@@ -80,15 +86,18 @@ const Hero = ({
                       <div>
                         <span className="testimonial-item-name text-color-high"></span>
                         <span className="testimonial-item-link ">
-                          <a href="#0"
-                            style={{
-                              position: "relative",
-                              top: "25px",
-                              transition: ".3s ease",
-                            }}
-                            className='has-icon'> <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" className="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
-                            </svg></a>
+                          <Switch>
+                            <a  href="camara"
+                              style={{
+                                position: "relative",
+                                top: "25px",
+                                transition: ".3s ease",
+                              }}
+                              className='has-icon'> <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" className="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                              </svg>
+                            </a>
+                          </Switch>
                         </span>
                       </div>
                     </div>
@@ -104,7 +113,7 @@ const Hero = ({
                       <div>
                         <span className="testimonial-item-name text-color-high"></span>
                         <span className="testimonial-item-link ">
-                          <a href="#0"
+                          <a href="senado"
                             style={{
                               position: "relative",
                               top: "25px",
@@ -128,7 +137,7 @@ const Hero = ({
                       <div>
                         <span className="testimonial-item-name text-color-high"></span>
                         <span className="testimonial-item-link ">
-                          <a href="#0"
+                          <a href="presidencia"
                             style={{
                               position: "relative",
                               top: "25px",

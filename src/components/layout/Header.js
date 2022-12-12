@@ -112,7 +112,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu} style={{color: "#fff"}}>Documentation</Link>
+                      <Link to="/Cta" onClick={closeMenu} style={{color: "#fff"}}>Documentation</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
