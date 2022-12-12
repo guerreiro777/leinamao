@@ -95,7 +95,7 @@ const Sta = ({
                       <Form.Group as={Col} controlId="formGridZip">
                         <Form.Check type="checkbox" label="Tramitação encerrada" />
                       </Form.Group><br /><hr />
-                      <h5>Tipo de matéria Legislativa</h5>
+                      <h5>Tipos de matéria Legislativa</h5>
                     </Row>
 
                     <Row className="mb-3">
