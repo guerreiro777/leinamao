@@ -1,12 +1,12 @@
 import React from 'react';
 // import sections
-import PRta from '../components/sections/PRta';
+import PresidenciaSection from '../components/sections/PresidenciaSection';
 
 const Presidencia = () => {
 
   return (
     <>
-      <PRta  split topDivider style={{backgroundColor: "#fff"}}/>
+      <PresidenciaSection  split topDivider style={{backgroundColor: "#fff"}}/>
     </>
   );
 }

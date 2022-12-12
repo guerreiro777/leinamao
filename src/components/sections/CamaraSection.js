@@ -21,7 +21,7 @@ const defaultProps = {
   split: false
 }
 
-const Cta = ({
+const CamaraSection = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -179,7 +179,7 @@ const Cta = ({
   );
 }
 
-Cta.propTypes = propTypes;
-Cta.defaultProps = defaultProps;
+CamaraSection.propTypes = propTypes;
+CamaraSection.defaultProps = defaultProps;
 
-export default Cta;
+export default CamaraSection;

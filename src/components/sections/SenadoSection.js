@@ -21,7 +21,7 @@ const defaultProps = {
   split: false
 }
 
-const Sta = ({
+const SenadoSection = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -292,7 +292,7 @@ const Sta = ({
   );
 }
 
-Sta.propTypes = propTypes;
-Sta.defaultProps = defaultProps;
+SenadoSection.propTypes = propTypes;
+SenadoSection.defaultProps = defaultProps;
 
-export default Sta;
+export default SenadoSection;

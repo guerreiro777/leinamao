@@ -21,7 +21,7 @@ const defaultProps = {
   split: false
 }
 
-const PRta = ({
+const PresidenciaSection = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -187,7 +187,7 @@ const PRta = ({
   );
 }
 
-PRta.propTypes = propTypes;
-PRta.defaultProps = defaultProps;
+PresidenciaSection.propTypes = propTypes;
+PresidenciaSection.defaultProps = defaultProps;
 
-export default PRta;
+export default PresidenciaSection;

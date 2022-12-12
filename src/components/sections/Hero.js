@@ -7,9 +7,6 @@ import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
 import { useLocation, Switch } from 'react-router-dom';
-import AppRoute from '../../utils/AppRoute';
-import Cta from './Cta';
-import LayoutDefault from '../../layouts/LayoutDefault';
 
 
 const propTypes = {

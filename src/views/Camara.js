@@ -1,12 +1,12 @@
 import React from 'react';
 // import sections
-import Cta from '../components/sections/Cta';
+import CamaraSection from '../components/sections/CamaraSection';
 
 const Camara = () => {
 
   return (
     <>
-      <Cta  split topDivider style={{backgroundColor: "#fff"}}/>
+      <CamaraSection  split topDivider style={{backgroundColor: "#fff"}}/>
     </>
   );
 }

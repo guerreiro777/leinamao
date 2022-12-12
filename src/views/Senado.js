@@ -1,12 +1,12 @@
 import React from 'react';
+import SenadoSection from '../components/sections/SenadoSection';
 // import sections
-import Sta from '../components/sections/Sta';
 
 const Senado = () => {
 
   return (
     <>
-      <Sta  split topDivider style={{backgroundColor: "#fff"}}/>
+      <SenadoSection  split topDivider style={{backgroundColor: "#fff"}}/>
     </>
   );
 }
