@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
-import Testimonial from '../components/sections/Testimonial';
+import Cards from '../components/sections/Cards';
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" style={{backgroundColor: "#fff"}}/>
-      <Testimonial topDivider/>
+      <Cards topDivider/>
       {/* <Cta  split topDivider style={{backgroundColor: "#fff"}}/>
       <Sta  split topDivider />
       <PRta  split topDivider style={{backgroundColor: "#fff"}}/> */}

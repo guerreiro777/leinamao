@@ -12,8 +12,8 @@ const Banner = ({
         <div {...props} className="banner">
           <div className="banner-inner text-xxs">
             <div className='banner-container'>
-              <a className="banner-link banner-link-green"
-                href="https://cruip.com/open-pro/" target="_blank" rel="noopener noreferrer">Ative o sinho</a></div>
+              <a className="banner-link " style={{color: "FFF"}}
+                href="https://cruip.com/open-pro/" target="_blank" rel="noopener noreferrer">Ative o sininho</a></div>
             <button className="banner-close" onClick={() => setBannerOpen(false)}>
               <span className="screen-reader">Alert</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">

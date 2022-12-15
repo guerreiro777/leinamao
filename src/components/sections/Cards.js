@@ -5,15 +5,6 @@ import SectionHeader from './partials/SectionHeader';
 import Slider from 'react-slick';
 import ReactCardCarousel from 'react-card-carousel';
 
-const dots = {
-  value: true
-}
-const infinite = {
-  value: true
-}
-const slidesToShow = [1]
-const slidesToScroll = [1]
-
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -23,7 +14,7 @@ const defaultProps = {
   ...SectionTilesProps.defaults
 }
 
-const Testimonial = ({
+const Cards = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -62,36 +53,36 @@ const Testimonial = ({
   const CARD_STYLE_first = {
     height: '200px',
     width: '200px',
-    paddingTop: '80px',
+    paddingTop: '50px',
     textAlign: 'center',
-    background: '#FFE11F',
-    color: '#FFF',
+    background: '#1e293b',
+    // color: '#FFF',
     fontSize: '12px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     borderRadius: '10px',
   }
 
   const CARD_STYLE_second = {
     height: '200px',
     width: '200px',
-    paddingTop: '80px',
+    paddingTop: '50px',
     textAlign: 'center',
-    background: '#1651B8',
-    color: '#FFF',
+    background: '#1e293b',
+    // color: '#FFF',
     fontSize: '12px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     borderRadius: '10px',
   }
 
   const CARD_STYLE_third = {
     height: '200px',
     width: '200px',
-    paddingTop: '80px',
+    paddingTop: '50px',
     textAlign: 'center',
-    background: '#16B83E',
-    color: '#FFF',
+    background: '#1e293b',
+    // color: '#FFF',
     fontSize: '12px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     borderRadius: '10px'
   }
 
@@ -101,29 +92,21 @@ const Testimonial = ({
       className={outerClasses}
     >
       <div className="container">
-        {/* 
-        [<Slider
-          dots={dots}
-          infinite={infinite}
-          slidesToShow={slidesToShow}
-          slidesToScroll={slidesToScroll}
-        />] */}
-
         <div className={innerClasses}>
           {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-right shadow" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
+              <div className="tiles-item-inner" >
+                <div className="testimonial-item-content textCard ">
                   <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
                     <div style={CARD_STYLE_first}>
-                      First Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_first}>
-                      Second Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_first}>
-                      Third Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                   </ReactCardCarousel>
                 </div>
@@ -139,16 +122,16 @@ const Testimonial = ({
             &nbsp; &nbsp;
             <div className="tiles-item reveal-from-bottom shadow">
               <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
+                <div className="testimonial-item-content textCard">
                   <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
                     <div style={CARD_STYLE_second}>
-                      First Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_second}>
-                      Second Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_second}>
-                      Third Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                   </ReactCardCarousel>
                 </div>
@@ -164,16 +147,16 @@ const Testimonial = ({
             &nbsp; &nbsp;
             <div className="tiles-item reveal-from-left shadow" data-reveal-delay="200">
               <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
+                <div className="testimonial-item-content textCard">
                   <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
                     <div style={CARD_STYLE_third}>
-                      First Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_third}>
-                      Second Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                     <div style={CARD_STYLE_third}>
-                      Third Card
+                      Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id.
                     </div>
                   </ReactCardCarousel>
                 </div>
@@ -193,7 +176,7 @@ const Testimonial = ({
   );
 }
 
-Testimonial.propTypes = propTypes;
-Testimonial.defaultProps = defaultProps;
+Cards.propTypes = propTypes;
+Cards.defaultProps = defaultProps;
 
-export default Testimonial;
+export default Cards;

@@ -69,7 +69,7 @@ const Hero = ({
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Ache aqui os projetos que poderão ser lei e os que já são lei.
-              </p>
+              </p><br /> 
               <div className="reveal-from-bottom" data-reveal-delay="600">
 
                 <ButtonGroup>

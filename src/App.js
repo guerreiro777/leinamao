@@ -12,6 +12,7 @@ import Home from './views/Home';
 import Camara from './views/Camara';
 import Senado from './views/Senado';
 import Presidencia from './views/Presidencia';
+import Sobre from './views/Sobre';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -43,6 +44,7 @@ const App = () => {
           <AppRoute path="/camara" component={Camara} layout={LayoutDefault}/>
           <AppRoute path="/senado" component={Senado} layout={LayoutDefault}/>
           <AppRoute path="/presidencia" component={Presidencia} layout={LayoutDefault}/>
+          <AppRoute path="/sobre" component={Sobre} layout={LayoutDefault} />
         </Switch>
       )} />
   );
