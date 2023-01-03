@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { toPlainObject } from 'lodash';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -7,6 +8,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { SectionProps } from '../../utils/SectionProps';
+import data from '../../assets/tipos.json'
 
 
 const propTypes = {
@@ -63,28 +65,28 @@ const CamaraSection = ({
     alignTop && 'align-top'
   );
 
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  const getData = () => {
-    fetch('./tipos.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    }
-    )
-      .then(function (response) {
-        console.log(response)
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(() => {
-    getData()
-  }, [])
+  // const getData = () => {
+  //   fetch('./tipos.json', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //     }
+  //   }
+  //   )
+  //     .then(function (response) {
+  //       console.log(response)
+  //       return response.json();
+  //     })
+  //     .then(function (myJson) {
+  //       console.log(myJson);
+  //       setData(myJson)
+  //     });
+  // }
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   return (
     <section
@@ -93,7 +95,6 @@ const CamaraSection = ({
     >
       <div className="container">
         <div className={tilesClasses}>
-
           <div
             className={innerClasses}
           >
@@ -115,10 +116,10 @@ const CamaraSection = ({
                     <div>
                     {
                       data && data.length > 0 && data.map((item) =>
-                      <p>{item.sigla}</p>
-                        // <Form.Group as={Col} controlId="formGridZip">
-                        //   <Form.Check type="checkbox" label='{item.sigla}' />
-                        // </Form.Group>
+                      // <p>{item.sigla}</p>
+                        <Form.Group as={Col} controlId="formGridZip">
+                          <Form.Check type="checkbox" label={item.sigla + ' - ' + item.nome} />
+                        </Form.Group>
 
                       )
                     }
