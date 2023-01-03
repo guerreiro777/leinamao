@@ -1,14 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import Input from '../elements/Input';
-import { Link } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import { SectionProps } from '../../utils/SectionProps';
 
 
 const propTypes = {
@@ -65,6 +63,28 @@ const CamaraSection = ({
     alignTop && 'align-top'
   );
 
+  const [data, setData] = useState([]);
+
+  const getData = () => {
+    fetch('./tipos.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }
+    )
+      .then(function (response) {
+        console.log(response)
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  useEffect(() => {
+    getData()
+  }, [])
 
   return (
     <section
@@ -92,12 +112,17 @@ const CamaraSection = ({
                         </FloatingLabel>
                       </Form.Group>
                     </Row>
-                    <Form.Group as={Col} controlId="formGridZip">
-                      <Form.Check type="checkbox" label="PEC" />
-                    </Form.Group>
-                    <Form.Group as={Col} controlId="formGridZip">
-                      <Form.Check type="checkbox" label="PL" />
-                    </Form.Group>
+                    <div>
+                    {
+                      data && data.length > 0 && data.map((item) =>
+                      <p>{item.sigla}</p>
+                        // <Form.Group as={Col} controlId="formGridZip">
+                        //   <Form.Check type="checkbox" label='{item.sigla}' />
+                        // </Form.Group>
+
+                      )
+                    }
+                    </div>
                     <br />
                     <Row className="mb-3">
                       <Form.Group as={Col} controlId="formGridEmail">
