@@ -1,14 +1,15 @@
 import classNames from 'classnames';
-import { toPlainObject } from 'lodash';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { SectionProps } from '../../utils/SectionProps';
-import data from '../../assets/tipos.json'
+import axios from 'axios';
+import { useLazyAxios } from "use-axios-client";
+
 
 
 const propTypes = {
@@ -65,28 +66,24 @@ const CamaraSection = ({
     alignTop && 'align-top'
   );
 
-  // const [data, setData] = useState([]);
+  const config = {
+    method: 'get',
+    baseURL: "http://localhost:8080",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    params: {
+      keywords: "compras",
+      dataInicio: Date("2022-01-01"),
+      dataFim: Date("2022-12-31")
+    }
+  };
 
-  // const getData = () => {
-  //   fetch('./tipos.json', {
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     }
-  //   }
-  //   )
-  //     .then(function (response) {
-  //       console.log(response)
-  //       return response.json();
-  //     })
-  //     .then(function (myJson) {
-  //       console.log(myJson);
-  //       setData(myJson)
-  //     });
-  // }
-  // useEffect(() => {
-  //   getData()
-  // }, [])
+  const [getData, { data, error, loading }] = useLazyAxios(
+    "/api/s/camara/full", config);
+
+  // if (loading || !data) return "Loading...";
+  // if (error) return "Error!";
 
   return (
     <section
@@ -114,7 +111,7 @@ const CamaraSection = ({
                       </Form.Group>
                     </Row>
                     <div>
-                    {
+                      {/* {
                       data && data.length > 0 && data.map((item) =>
                       // <p>{item.sigla}</p>
                         <Form.Group as={Col} controlId="formGridZip">
@@ -122,7 +119,7 @@ const CamaraSection = ({
                         </Form.Group>
 
                       )
-                    }
+                    } */}
                     </div>
                     <br />
                     <Row className="mb-3">
@@ -178,8 +175,8 @@ const CamaraSection = ({
                     <Form.Check type="checkbox" label="Check me out" />
                   </Form.Group> */}
 
-                    <Button variant="primary" type="submit">
-                      Submit
+                    <Button variant="primary" type="button" onClick={() => getData()}>
+                      Pesquisar
                     </Button>
                     &nbsp;
                     &nbsp;
@@ -188,22 +185,16 @@ const CamaraSection = ({
                     </Button>
                   </Form>
                 </div>
-                <div className='cta-position' data-reveal-container=".split-item">
-                  <h2>Heading</h2>
-                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
-                  </p>
-                  <a href='' style={{ color: "blue" }}>ver mais</a>
-                  <h2>Heading</h2>
-                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
-                  </p>
-                  <a href='' style={{ color: "blue" }}>ver mais</a>
-                  <h2>Heading</h2>
-                  <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
-                    Lorem ipsum quis aute sit excepteur amet mollit. Minim veniam irure exercitation nulla mollit qui ex duis sit nulla velit eiusmod id. Anim dolor eu non cillum eiusmod eu mollit amet. Duis sunt do adipisicing id laborum elit occaecat fugiat.
-                  </p>
-                  <a href='' style={{ color: "blue" }}>ver mais</a>
+                <div>
+                  {loading && <div>Carregando...</div>}
+                  {error && <div>{error.message}</div>}
+                  {data && data.dados.map(valor => <div className='cta-position' data-reveal-container=".split-item">
+                    <h2>Heading</h2>
+                    <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                      {valor.ementa}
+                    </p>
+                    <a href='' style={{ color: "blue" }}>ver mais</a>
+                  </div>)}
                 </div>
               </div>
             </div>
