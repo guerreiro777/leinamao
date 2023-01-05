@@ -6,9 +6,8 @@ import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { SectionProps } from '../../utils/SectionProps';
-import axios from 'axios';
 import { useLazyAxios } from "use-axios-client";
+import { SectionProps } from '../../utils/SectionProps';
 
 
 
@@ -80,10 +79,8 @@ const CamaraSection = ({
   };
 
   const [getData, { data, error, loading }] = useLazyAxios(
-    "/api/s/camara/full", config);
+    "/api/s/camara", config);
 
-  // if (loading || !data) return "Loading...";
-  // if (error) return "Error!";
 
   return (
     <section
@@ -170,11 +167,6 @@ const CamaraSection = ({
                       </Form.Group>
                     </Row>
                     <br />
-
-                    {/* <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                  </Form.Group> */}
-
                     <Button variant="primary" type="button" onClick={() => getData()}>
                       Pesquisar
                     </Button>
