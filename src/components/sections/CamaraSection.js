@@ -69,17 +69,6 @@ const CamaraSection = ({
     setSiglaUfAutor(event.target.value);
   };
 
-  console.log(
-    assunto,
-    numero,
-    anoInicio,
-    anoFim,
-    autor,
-    senado,
-    siglaPartidoAutor,
-    siglaUfAutor
-  );
-
   // Pesquisa na API
   const config = {
     method: 'get',
@@ -88,9 +77,14 @@ const CamaraSection = ({
       'Content-Type': 'application/json'
     },
     params: {
-      keywords: !!assunto ? assunto : "",
-      // dataInicio: Date("2022-01-01"),
-      // dataFim: Date("2022-12-31")
+      keywords: assunto,
+      numero: numero,
+      anoInicio: anoInicio,
+      anoFim: anoFim,
+      autor: autor,
+      senado: senado,
+      siglaPartidoAutor: siglaPartidoAutor,
+      siglaUfAutor: siglaPartidoAutor
     }
   };
 
