@@ -1,0 +1,72 @@
+[
+    {
+        "cod":"DESTPEC",
+        "nome": "PEC",
+        "descricao":"Proposta de Emenda à Constituição"        
+    },
+    {
+        "cod":"DESTPLORD",
+        "nome": "PL ORD",
+        "descricao":"Projeto de Lei Ordinária"
+    },
+    {
+        "cod":"DESTPLCOMPL",
+        "nome":"PL COMPL",
+        "descricao":"Projeto de Lei Complementar"
+    },
+    {
+        "cod":"DESTEMENDSUBS",
+        "nome": "EMEND SUBS",
+        "descricao":"Emenda e Substitutivo da CD"
+    },
+    {
+        "cod":"DESTPDEC",
+        "nome":"PEDC",
+        "descricao":""
+    },
+    {
+        "cod":"DESTPRS",
+        "nome":"PRS",
+        "descricao":"Projeto de Resolução"
+    },
+    {
+        "cod":"DESTRQS",
+        "nome":"RQS",
+        "descricao":"Requerimento de Plenário"
+    },
+    {
+        "cod":"DESTMPV",
+        "nome":"MPV",
+        "descricao":"Medida Provisória"
+    },
+    {
+        "cod":"DESTVET",
+        "nome":"VET",
+        "descricao":"Veto"
+    },
+    {
+        "cod":"DESTPLN",
+        "nome":"PLN",
+        "descricao":"Projeto de Lei Ordinária"
+    },
+    {
+        "cod":"DESTPDN",
+        "nome":"PDN",
+        "descricao":"Projeto de Decreto Legislativo"
+    },
+    {
+        "cod":"DESTPRN",
+        "nome":"PRN",
+        "descricao":"Projeto de Resolução"
+    },
+    {
+        "cod":"DESTRQN",
+        "nome":"RQN",
+        "descricao":"Requerimento de Plenário"
+    },
+    {
+        "cod":"DESTREQCN",
+        "nome":"REQ",
+        "descricao":"Requerimentos de Comissão"
+    }
+]

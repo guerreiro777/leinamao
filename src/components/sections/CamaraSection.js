@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
 import { useLazyAxios } from "use-axios-client";
-import dataJson from '../../assets/tipos.json';
+import dataJson from '../../assets/tiposCamara.json';
 import { SectionProps } from '../../utils/SectionProps';
 
 const propTypes = {

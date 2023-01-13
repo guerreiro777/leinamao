@@ -46,8 +46,10 @@
 .form-control-sm {
 	min-height: calc(1.5em + 0.5rem + 2px);
 	/* padding: 0.25rem 0.5rem; Cancelled out by .form-floating */
-	font-size: .875rem;
+	font-size: small;
 	border-radius: 0.2rem;
+	border-color: #E3E6EA;
+	background-color: #fff;
 }
 
 .form-floating>label {
